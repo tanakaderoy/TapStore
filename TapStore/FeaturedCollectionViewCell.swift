@@ -12,7 +12,7 @@ class FeaturedCollectionViewCell: UICollectionViewCell, SelfConfiguringCell {
     static let reuseIdentifier: String = "FeaturedCell"
     let name = UILabel()
     let tagline = UILabel()
-    let subtile = UILabel()
+    let subtitle = UILabel()
     let imageView = UIImageView()
 
     override init(frame: CGRect) {
@@ -27,13 +27,13 @@ class FeaturedCollectionViewCell: UICollectionViewCell, SelfConfiguringCell {
         name.font = .preferredFont(forTextStyle: .title2)
         name.textColor = .label
 
-        subtile.font = .preferredFont(forTextStyle: .title2)
-        subtile.textColor = .secondaryLabel
+        subtitle.font = .preferredFont(forTextStyle: .title3)
+        subtitle.textColor = .secondaryLabel
 
         imageView.layer.cornerRadius = 5
         imageView.clipsToBounds = true
         imageView.contentMode = .scaleAspectFit
-        let stackView = UIStackView(arrangedSubviews: [seperator,tagline, name, subtile, imageView])
+        let stackView = UIStackView(arrangedSubviews: [seperator,tagline, name, subtitle, imageView])
         stackView.translatesAutoresizingMaskIntoConstraints = false
         stackView.axis = .vertical
         contentView.addSubview(stackView)
@@ -46,7 +46,7 @@ class FeaturedCollectionViewCell: UICollectionViewCell, SelfConfiguringCell {
 
         ])
         stackView.setCustomSpacing(10, after: seperator)
-        stackView.setCustomSpacing(10, after: subtile)
+        stackView.setCustomSpacing(10, after: subtitle)
     }
 
     required init?(coder: NSCoder) {
@@ -55,9 +55,9 @@ class FeaturedCollectionViewCell: UICollectionViewCell, SelfConfiguringCell {
 
 
     func configure(with app: App) {
-        name.text = app.subheading
+        name.text = app.name
         tagline.text = app.tagline.uppercased()
-        subtile.text = app.name
+        subtitle.text = app.subheading
         imageView.image = UIImage(named: app.image)
 
     }
