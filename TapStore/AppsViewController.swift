@@ -16,7 +16,7 @@ class AppsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        collectionView = UICollectionView(frame: view.bounds, collectionViewLayout: UICollectionViewFlowLayout())
+        collectionView = UICollectionView(frame: view.bounds, collectionViewLayout: createCompossitionalLayout())
         collectionView.autoresizingMask = [.flexibleWidth,.flexibleHeight]
         collectionView.backgroundColor = .systemBackground
         view.addSubview(collectionView)
@@ -57,8 +57,36 @@ class AppsViewController: UIViewController {
         }
 
         dataSource?.apply(snapshot)
-
     }
 
+
+    func createFeaturedSection(using seection:Section)-> NSCollectionLayoutSection{
+        let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .fractionalHeight(1))
+        let layoutItem = NSCollectionLayoutItem(layoutSize: itemSize)
+
+        let layoutGroupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1), heightDimension: .estimated(350))
+        let layoutGroup = NSCollectionLayoutGroup.horizontal(layoutSize: layoutGroupSize, subitems: [layoutItem])
+
+        let layoutSection: NSCollectionLayoutSection = NSCollectionLayoutSection(group: layoutGroup)
+
+        return layoutSection
+    }
+
+    func createCompossitionalLayout() -> UICollectionViewCompositionalLayout {
+        let layout = UICollectionViewCompositionalLayout {
+            sectionIndex, layoutEnviroment in
+            let section = self.sections[sectionIndex]
+            switch section.type {
+            case .featured:
+                return self.createFeaturedSection(using: section)
+            default:
+                return self.createFeaturedSection(using: section)
+            }
+        }
+        let config = UICollectionViewCompositionalLayoutConfiguration()
+        config.interSectionSpacing = 20
+        layout.configuration = config
+        return layout
+    }
 }
 
