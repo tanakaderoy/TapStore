@@ -9,23 +9,41 @@
 /* Begin PBXBuildFile section */
 		BABC2F0224A7B6B200D167B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABC2F0124A7B6B200D167B2 /* AppDelegate.swift */; };
 		BABC2F0424A7B6B200D167B2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABC2F0324A7B6B200D167B2 /* SceneDelegate.swift */; };
-		BABC2F0624A7B6B200D167B2 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABC2F0524A7B6B200D167B2 /* FirstViewController.swift */; };
-		BABC2F0824A7B6B200D167B2 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABC2F0724A7B6B200D167B2 /* SecondViewController.swift */; };
+		BABC2F0624A7B6B200D167B2 /* AppsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABC2F0524A7B6B200D167B2 /* AppsViewController.swift */; };
+		BABC2F0824A7B6B200D167B2 /* GamesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABC2F0724A7B6B200D167B2 /* GamesViewController.swift */; };
 		BABC2F0B24A7B6B200D167B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BABC2F0924A7B6B200D167B2 /* Main.storyboard */; };
 		BABC2F0D24A7B6B400D167B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BABC2F0C24A7B6B400D167B2 /* Assets.xcassets */; };
 		BABC2F1024A7B6B400D167B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BABC2F0E24A7B6B400D167B2 /* LaunchScreen.storyboard */; };
+		BABC2F1824A7B79F00D167B2 /* ArcadeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABC2F1724A7B79F00D167B2 /* ArcadeViewController.swift */; };
+		BABC2F1A24A7B7AA00D167B2 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABC2F1924A7B7AA00D167B2 /* SearchViewController.swift */; };
+		BABC2F1C24A7BBB700D167B2 /* Bundle-Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABC2F1B24A7BBB700D167B2 /* Bundle-Decodable.swift */; };
+		BABC2F1E24A7BC1100D167B2 /* appstore.json in Resources */ = {isa = PBXBuildFile; fileRef = BABC2F1D24A7BC1100D167B2 /* appstore.json */; };
+		BABC2F2024A7BCEF00D167B2 /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABC2F1F24A7BCEF00D167B2 /* Section.swift */; };
+		BABC2F2224A7BCFA00D167B2 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABC2F2124A7BCFA00D167B2 /* App.swift */; };
+		BABC2F2424A7BE9800D167B2 /* SelfConfiguringCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABC2F2324A7BE9800D167B2 /* SelfConfiguringCell.swift */; };
+		BABC2F2624A7BF8A00D167B2 /* FeaturedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABC2F2524A7BF8A00D167B2 /* FeaturedCollectionViewCell.swift */; };
+		BABC2F2824A7C5BA00D167B2 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABC2F2724A7C5BA00D167B2 /* Util.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BABC2EFE24A7B6B200D167B2 /* TapStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TapStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BABC2F0124A7B6B200D167B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BABC2F0324A7B6B200D167B2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BABC2F0524A7B6B200D167B2 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		BABC2F0724A7B6B200D167B2 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		BABC2F0524A7B6B200D167B2 /* AppsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppsViewController.swift; sourceTree = "<group>"; };
+		BABC2F0724A7B6B200D167B2 /* GamesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesViewController.swift; sourceTree = "<group>"; };
 		BABC2F0A24A7B6B200D167B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BABC2F0C24A7B6B400D167B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BABC2F0F24A7B6B400D167B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BABC2F1124A7B6B400D167B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BABC2F1724A7B79F00D167B2 /* ArcadeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArcadeViewController.swift; sourceTree = "<group>"; };
+		BABC2F1924A7B7AA00D167B2 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		BABC2F1B24A7BBB700D167B2 /* Bundle-Decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle-Decodable.swift"; sourceTree = "<group>"; };
+		BABC2F1D24A7BC1100D167B2 /* appstore.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = appstore.json; sourceTree = "<group>"; };
+		BABC2F1F24A7BCEF00D167B2 /* Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
+		BABC2F2124A7BCFA00D167B2 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
+		BABC2F2324A7BE9800D167B2 /* SelfConfiguringCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfConfiguringCell.swift; sourceTree = "<group>"; };
+		BABC2F2524A7BF8A00D167B2 /* FeaturedCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedCollectionViewCell.swift; sourceTree = "<group>"; };
+		BABC2F2724A7C5BA00D167B2 /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,8 +78,17 @@
 			children = (
 				BABC2F0124A7B6B200D167B2 /* AppDelegate.swift */,
 				BABC2F0324A7B6B200D167B2 /* SceneDelegate.swift */,
-				BABC2F0524A7B6B200D167B2 /* FirstViewController.swift */,
-				BABC2F0724A7B6B200D167B2 /* SecondViewController.swift */,
+				BABC2F0524A7B6B200D167B2 /* AppsViewController.swift */,
+				BABC2F1B24A7BBB700D167B2 /* Bundle-Decodable.swift */,
+				BABC2F1D24A7BC1100D167B2 /* appstore.json */,
+				BABC2F0724A7B6B200D167B2 /* GamesViewController.swift */,
+				BABC2F1724A7B79F00D167B2 /* ArcadeViewController.swift */,
+				BABC2F2724A7C5BA00D167B2 /* Util.swift */,
+				BABC2F1924A7B7AA00D167B2 /* SearchViewController.swift */,
+				BABC2F2524A7BF8A00D167B2 /* FeaturedCollectionViewCell.swift */,
+				BABC2F2324A7BE9800D167B2 /* SelfConfiguringCell.swift */,
+				BABC2F1F24A7BCEF00D167B2 /* Section.swift */,
+				BABC2F2124A7BCFA00D167B2 /* App.swift */,
 				BABC2F0924A7B6B200D167B2 /* Main.storyboard */,
 				BABC2F0C24A7B6B400D167B2 /* Assets.xcassets */,
 				BABC2F0E24A7B6B400D167B2 /* LaunchScreen.storyboard */,
@@ -131,6 +158,7 @@
 				BABC2F1024A7B6B400D167B2 /* LaunchScreen.storyboard in Resources */,
 				BABC2F0D24A7B6B400D167B2 /* Assets.xcassets in Resources */,
 				BABC2F0B24A7B6B200D167B2 /* Main.storyboard in Resources */,
+				BABC2F1E24A7BC1100D167B2 /* appstore.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,9 +169,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BABC2F0824A7B6B200D167B2 /* SecondViewController.swift in Sources */,
-				BABC2F0624A7B6B200D167B2 /* FirstViewController.swift in Sources */,
+				BABC2F2224A7BCFA00D167B2 /* App.swift in Sources */,
+				BABC2F1A24A7B7AA00D167B2 /* SearchViewController.swift in Sources */,
+				BABC2F2624A7BF8A00D167B2 /* FeaturedCollectionViewCell.swift in Sources */,
+				BABC2F0824A7B6B200D167B2 /* GamesViewController.swift in Sources */,
+				BABC2F0624A7B6B200D167B2 /* AppsViewController.swift in Sources */,
+				BABC2F1824A7B79F00D167B2 /* ArcadeViewController.swift in Sources */,
 				BABC2F0224A7B6B200D167B2 /* AppDelegate.swift in Sources */,
+				BABC2F2824A7C5BA00D167B2 /* Util.swift in Sources */,
+				BABC2F2024A7BCEF00D167B2 /* Section.swift in Sources */,
+				BABC2F2424A7BE9800D167B2 /* SelfConfiguringCell.swift in Sources */,
+				BABC2F1C24A7BBB700D167B2 /* Bundle-Decodable.swift in Sources */,
 				BABC2F0424A7B6B200D167B2 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
