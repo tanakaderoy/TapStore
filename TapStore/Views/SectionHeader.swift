@@ -10,8 +10,9 @@ import UIKit
 
 class SectionHeader: UICollectionReusableView {
     static let  reuseIdentifier = "SectionHeader"
+
     let title = UILabel()
-    let subTitle = UILabel()
+    let subtitle = UILabel()
 
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -19,28 +20,28 @@ class SectionHeader: UICollectionReusableView {
         separator.translatesAutoresizingMaskIntoConstraints = false
         separator.backgroundColor = .quaternaryLabel
 
-        title.font = UIFontMetrics.default.scaledFont(for: .systemFont(ofSize: 22, weight: .bold))
         title.textColor = .label
+        title.font = UIFontMetrics.default.scaledFont(for: UIFont.systemFont(ofSize: 22, weight: .bold))
+        subtitle.textColor = .secondaryLabel
 
-        subTitle.textColor = .secondaryLabel
-
-        let stackView = UIStackView(arrangedSubviews: [separator, title, subTitle])
+        let stackView = UIStackView(arrangedSubviews: [separator, title, subtitle])
         stackView.translatesAutoresizingMaskIntoConstraints = false
+        stackView.axis = .vertical
         addSubview(stackView)
 
         NSLayoutConstraint.activate([
             separator.heightAnchor.constraint(equalToConstant: 1),
+
             stackView.leadingAnchor.constraint(equalTo: leadingAnchor),
             stackView.trailingAnchor.constraint(equalTo: trailingAnchor),
             stackView.topAnchor.constraint(equalTo: topAnchor),
-            stackView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -10),
+            stackView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -10)
         ])
+
         stackView.setCustomSpacing(10, after: separator)
     }
 
-
-
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("Stop trying to make storyboards happen.")
     }
 }

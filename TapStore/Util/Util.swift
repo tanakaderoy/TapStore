@@ -10,6 +10,6 @@ import Foundation
 
 enum SectionType: String, Decodable{
     case featured = "featured"
-    case smallTablee = "smallTable"
+    case smallTable = "smallTable"
     case mediumTable = "mediumTable"
 }

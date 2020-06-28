@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BAABC8DA24A7D78800CD21B4 /* MediumTableCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAABC8D924A7D78800CD21B4 /* MediumTableCollectionViewCell.swift */; };
+		BAABC8DC24A7DECD00CD21B4 /* SectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAABC8DB24A7DECD00CD21B4 /* SectionHeader.swift */; };
+		BAABC8E324A82FD100CD21B4 /* SmallTableCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAABC8E224A82FD100CD21B4 /* SmallTableCollectionViewCell.swift */; };
 		BABC2F0224A7B6B200D167B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABC2F0124A7B6B200D167B2 /* AppDelegate.swift */; };
 		BABC2F0424A7B6B200D167B2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABC2F0324A7B6B200D167B2 /* SceneDelegate.swift */; };
 		BABC2F0624A7B6B200D167B2 /* AppsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABC2F0524A7B6B200D167B2 /* AppsViewController.swift */; };
@@ -26,6 +29,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BAABC8D924A7D78800CD21B4 /* MediumTableCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediumTableCollectionViewCell.swift; sourceTree = "<group>"; };
+		BAABC8DB24A7DECD00CD21B4 /* SectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeader.swift; sourceTree = "<group>"; };
+		BAABC8E224A82FD100CD21B4 /* SmallTableCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallTableCollectionViewCell.swift; sourceTree = "<group>"; };
 		BABC2EFE24A7B6B200D167B2 /* TapStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TapStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BABC2F0124A7B6B200D167B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BABC2F0324A7B6B200D167B2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -57,6 +63,48 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BAABC8DD24A82DEC00CD21B4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BABC2F1D24A7BC1100D167B2 /* appstore.json */,
+				BABC2F2124A7BCFA00D167B2 /* App.swift */,
+				BABC2F1F24A7BCEF00D167B2 /* Section.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BAABC8DE24A82E0300CD21B4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BABC2F2524A7BF8A00D167B2 /* FeaturedCollectionViewCell.swift */,
+				BAABC8D924A7D78800CD21B4 /* MediumTableCollectionViewCell.swift */,
+				BABC2F2324A7BE9800D167B2 /* SelfConfiguringCell.swift */,
+				BAABC8DB24A7DECD00CD21B4 /* SectionHeader.swift */,
+				BAABC8E224A82FD100CD21B4 /* SmallTableCollectionViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BAABC8DF24A82E0C00CD21B4 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BABC2F0524A7B6B200D167B2 /* AppsViewController.swift */,
+				BABC2F0724A7B6B200D167B2 /* GamesViewController.swift */,
+				BABC2F1724A7B79F00D167B2 /* ArcadeViewController.swift */,
+				BABC2F1924A7B7AA00D167B2 /* SearchViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		BAABC8E024A82F7E00CD21B4 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				BABC2F1B24A7BBB700D167B2 /* Bundle-Decodable.swift */,
+				BABC2F2724A7C5BA00D167B2 /* Util.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
 		BABC2EF524A7B6B200D167B2 = {
 			isa = PBXGroup;
 			children = (
@@ -78,17 +126,10 @@
 			children = (
 				BABC2F0124A7B6B200D167B2 /* AppDelegate.swift */,
 				BABC2F0324A7B6B200D167B2 /* SceneDelegate.swift */,
-				BABC2F0524A7B6B200D167B2 /* AppsViewController.swift */,
-				BABC2F2524A7BF8A00D167B2 /* FeaturedCollectionViewCell.swift */,
-				BABC2F1B24A7BBB700D167B2 /* Bundle-Decodable.swift */,
-				BABC2F1D24A7BC1100D167B2 /* appstore.json */,
-				BABC2F0724A7B6B200D167B2 /* GamesViewController.swift */,
-				BABC2F1724A7B79F00D167B2 /* ArcadeViewController.swift */,
-				BABC2F2724A7C5BA00D167B2 /* Util.swift */,
-				BABC2F1924A7B7AA00D167B2 /* SearchViewController.swift */,
-				BABC2F2324A7BE9800D167B2 /* SelfConfiguringCell.swift */,
-				BABC2F1F24A7BCEF00D167B2 /* Section.swift */,
-				BABC2F2124A7BCFA00D167B2 /* App.swift */,
+				BAABC8DD24A82DEC00CD21B4 /* Models */,
+				BAABC8E024A82F7E00CD21B4 /* Util */,
+				BAABC8DE24A82E0300CD21B4 /* Views */,
+				BAABC8DF24A82E0C00CD21B4 /* Controllers */,
 				BABC2F0924A7B6B200D167B2 /* Main.storyboard */,
 				BABC2F0C24A7B6B400D167B2 /* Assets.xcassets */,
 				BABC2F0E24A7B6B400D167B2 /* LaunchScreen.storyboard */,
@@ -171,13 +212,16 @@
 			files = (
 				BABC2F2224A7BCFA00D167B2 /* App.swift in Sources */,
 				BABC2F1A24A7B7AA00D167B2 /* SearchViewController.swift in Sources */,
+				BAABC8E324A82FD100CD21B4 /* SmallTableCollectionViewCell.swift in Sources */,
 				BABC2F2624A7BF8A00D167B2 /* FeaturedCollectionViewCell.swift in Sources */,
 				BABC2F0824A7B6B200D167B2 /* GamesViewController.swift in Sources */,
 				BABC2F0624A7B6B200D167B2 /* AppsViewController.swift in Sources */,
 				BABC2F1824A7B79F00D167B2 /* ArcadeViewController.swift in Sources */,
 				BABC2F0224A7B6B200D167B2 /* AppDelegate.swift in Sources */,
 				BABC2F2824A7C5BA00D167B2 /* Util.swift in Sources */,
+				BAABC8DA24A7D78800CD21B4 /* MediumTableCollectionViewCell.swift in Sources */,
 				BABC2F2024A7BCEF00D167B2 /* Section.swift in Sources */,
+				BAABC8DC24A7DECD00CD21B4 /* SectionHeader.swift in Sources */,
 				BABC2F2424A7BE9800D167B2 /* SelfConfiguringCell.swift in Sources */,
 				BABC2F1C24A7BBB700D167B2 /* Bundle-Decodable.swift in Sources */,
 				BABC2F0424A7B6B200D167B2 /* SceneDelegate.swift in Sources */,
